@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select name="" class="operator" align="center">
+        <option value="bebek" class="thumb">bebek<img src="888fd76f-2a21-4fd7-bcd1-44aa27ddc577.jpg" alt="" width="200px"></option>
+        <option value="kucing" class="thumb">kucing<img src="Pin by 2Beans1Cream on idk in 2022 _ Cute cats photos, Funny cute cats, Pretty cats.jpg" alt="" width="200px"></option>
+        <option value="anjing" class="thumb">anjing<img src="@donagigipets.jpg" alt="" width="200px"></option>
+        <option value="marsha" class="thumb">marsha<img src="download.jpg" alt="" width="200px"></option>
+        <option value="fizi" class="thumb">fizi<img src="067a82f8-5175-46a0-8378-396f7b0bc2ab.jpg" alt="" width="200px"></option>
+        <option value="udin" class="thumb">udin<img src="20 Magical Disney Wallpapers For Your Phone.jpg" alt="" width="200px"></option>
+    </select>
+    <img src="888fd76f-2a21-4fd7-bcd1-44aa27ddc577.jpg" alt="" class="jumbo" style="margin: 10px auto;width: 500px;border: 5px solid black;">
+    <script>
+            const operator = document.querySelector('.operator');
+            const jumbo = document.querySelector('.jumbo');
+            operator.addEventListener('click',function(e) {
+                if(e.target.className == 'thumb') {
+
+                    jumbo.src = e.target.src;
+
+                }
+               
+        });
+    </script>
+</body>
+</html>
